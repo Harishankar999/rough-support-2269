@@ -4,8 +4,8 @@
   // border: 1px solid red;
   background-color: $mainBgColor;
   .trialText {
-    padding-left: 10%;
-    width: 60%;
+    margin-left: 10%;
+    width: 52%;
     h4 {
       font-size: 3rem;
       color: rgb(37, 36, 36);
@@ -20,9 +20,9 @@
   }
   .btnContainer {
     @include flex();
-    width: 48%;
+    width: 40%;
     margin-top: 60px;
-    padding-left: 10%;
+    margin-left: 10%;
     // border: 1px solid green;
     p {
       font-size: 1.2rem;
