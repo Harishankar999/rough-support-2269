@@ -1,0 +1,13 @@
+@import "../../global.scss";
+
+.brandsContainer {
+    .brandsImg{
+        margin: auto;
+        width: 80%;
+        @include flex; 
+    }
+    .line {
+        @include line;
+        margin-top: 70px;
+    }
+}

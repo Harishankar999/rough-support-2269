@@ -1,0 +1,26 @@
+$mainFont: MuotoWeb, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mainColor: #fa5d00;
+$mainLightColor: #fc6a15;
+$hoverBtnColor: #fa782d;
+$mainBgColor: #fff8f2;
+
+@mixin btn($bg: $mainLightColor, $fontColor: white, $fontSize: 1.25rem) {
+  height: 50px;
+  width: 220px;
+  background-color: $bg;
+  border-radius: 0.95rem;
+  color: $fontColor;
+  font-size: $fontSize;
+}
+
+@mixin flex($fd: row, $jc: space-between, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin line($color: $mainColor) {
+    height: 1px;
+    background-color: $color;
+}

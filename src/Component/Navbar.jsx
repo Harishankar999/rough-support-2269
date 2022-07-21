@@ -1,9 +1,26 @@
 import React from "react";
-import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
+
+
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Image,
+  Text,
+} from "@chakra-ui/react";
+
 import homeIMG from "../Img/home.png";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
+
+
+
   return (
     <Box
       className="Box"
@@ -66,6 +83,9 @@ const Navbar = () => {
               bg={"#fa5d00"}
               colorScheme={"red"}
               color="white"
+              onClick={() => {
+                navigate("/signup")
+              }}
             >
               Try Harvest free
             </Button>
