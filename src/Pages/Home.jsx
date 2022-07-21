@@ -11,7 +11,7 @@ import {
 import React from "react";
 import Footer from "../Component/Footer";
 import Navbar from "../Component/Navbar";
-import { StarIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon, StarIcon } from "@chakra-ui/icons";
 import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
 import { Link as RouterLink } from "react-router-dom";
@@ -320,6 +320,135 @@ const Home = () => {
         bg={"#fa5d00"}
         height="1px"
       />
+      <Box padding={"60px 0px 60px 0px"}>
+        <HStack
+          textAlign={"left"}
+          // border={"1px solid red"}
+          width="90%"
+          margin={"auto"}
+        >
+          <Box width={"50%"}>
+            <Text
+              margin={"20px"}
+              fontSize={"20px"}
+              fontWeight="bold"
+              color={"#fa5d00"}
+            >
+              LEARNING RESOURCES
+            </Text>
+            <Text marginLeft={"20px"} width={"70%"} fontSize={"40px"}>
+              Supporting your team along the way
+            </Text>
+          </Box>
+          <VStack width={"50%"}>
+            <Box
+              _hover={{ bg: "red.100" }}
+              borderTop={"1px solid red"}
+              width="90%"
+              padding="20px"
+              cursor={"pointer"}
+            >
+              <HStack>
+                <Image
+                  marginRight="20px"
+                  src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-folder.svg"
+                />
+                <Text width="60%" fontSize={"18px"} textAlign={"left"}>
+                  <span className="span span3">Guides and templates </span>
+                  Learn how to introduce your team to time tracking and make the
+                  most of Harvest.
+                </Text>
+                <ArrowForwardIcon w={8} h={8} color="red" marginLeft={"10px"} />
+              </HStack>
+            </Box>
+            <Box
+              _hover={{ bg: "red.100" }}
+              borderTop={"1px solid red"}
+              width="90%"
+              padding="20px"
+              cursor={"pointer"}
+            >
+              <HStack>
+                <Image
+                  marginRight="20px"
+                  src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-laptop.svg"
+                />
+                <Text width="60%" fontSize={"18px"} textAlign={"left"}>
+                  <span className="span span3">Webinars </span>
+                  Watch a quick intro to Harvest or sign up for a live session
+                  with one of our Experts.
+                </Text>
+                <ArrowForwardIcon w={8} h={8} color="red" marginLeft={"10px"} />
+              </HStack>
+            </Box>
+            <Box
+              _hover={{ bg: "red.100" }}
+              borderTop={"1px solid red"}
+              width="90%"
+              borderBottom="1px solid red"
+              padding="20px"
+              cursor={"pointer"}
+            >
+              <HStack>
+                <Image
+                  marginRight="20px"
+                  src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-help.svg"
+                />
+                <Text width="60%" fontSize={"18px"} textAlign={"left"}>
+                  <span className="span span3">Help Center </span>
+                  Find the answers to all your questions or get in touch with
+                  one of our friendly Experts.
+                </Text>
+                <ArrowForwardIcon w={8} h={8} color="red" marginLeft={"10px"} />
+              </HStack>
+            </Box>
+          </VStack>
+        </HStack>
+      </Box>
+      <Divider
+        orientation="horizontal"
+        width={"100%"}
+        margin={"auto"}
+        bg={"#fa5d00"}
+        height="1px"
+      />
+      <Box bg={"white"} padding={"60px 0px 60px 0px"} border={"1px solid white"}>
+        <HStack textAlign={"left"} width={"90%"} margin="auto">
+          <Box width={"50%"}>
+            <VStack textAlign={"left"}>
+              <Text width={"90%"} fontSize={"40px"}>
+                Start tracking time today
+              </Text>
+              <Text width={"90%"} fontWeight={"300"} fontSize={"25px"}>
+                Join 70,000+ companies spending their time wisely with Harvest.
+              </Text>
+              <HStack
+                padding={"30px"}
+                justifyContent={"space-between"}
+                gap="40px"
+              >
+                <RouterLink to="">
+                  <Button
+                    fontSize={"lg"}
+                    height={"45px"}
+                    width="200px"
+                    borderRadius="10px"
+                    bg={"#fa5d00"}
+                    colorScheme={"red"}
+                    color="white"
+                  >
+                    Try Harvest free
+                  </Button>
+                </RouterLink>
+                <Text>Free 30-day trial. No credit card required.</Text>
+              </HStack>
+            </VStack>
+          </Box>
+          <Box width={"50%"} paddingLeft="50px">
+            <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" />
+          </Box>
+        </HStack>
+      </Box>
       <Footer />
     </Box>
   );

@@ -58,17 +58,19 @@ const Navbar = () => {
                 Sign Up
               </Text>
             </RouterLink>
-            <Button
-              fontSize={"lg"}
-              height={"45px"}
-              width="200px"
-              borderRadius="10px"
-              bg={"#fa5d00"}
-              colorScheme={"red"}
-              color="white"
-            >
-              Try Harvest free
-            </Button>
+            <RouterLink to="">
+              <Button
+                fontSize={"lg"}
+                height={"45px"}
+                width="200px"
+                borderRadius="10px"
+                bg={"#fa5d00"}
+                colorScheme={"red"}
+                color="white"
+              >
+                Try Harvest free
+              </Button>
+            </RouterLink>
           </HStack>
         </HStack>
       </Flex>
