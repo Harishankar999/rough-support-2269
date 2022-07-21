@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { Tabs, TabList, Tab} from "@chakra-ui/react";
+import { Tabs, TabList, Tab } from "@chakra-ui/react";
 
 import homeIMG from "../Img/home.png";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
@@ -23,8 +23,8 @@ const Navbar = () => {
   // z-index: 1;
 
   return (
-    <Box className="Box"  height="100px">
-      <Flex  margin="25px 100px">
+    <Box className="Box" height="100px">
+      <Flex margin="25px 100px">
         <Box>
           <RouterLink to="/">
             <Image height={"35px"} src={homeIMG} />
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <Tab onClick={() => goto("/")}>Why Harvest?</Tab>
                 <Tab onClick={() => goto("/")}> Features</Tab>
                 <Tab onClick={() => goto("/")}>Customers</Tab>
-                <Tab onClick={() => goto("/")}> Integrations</Tab>
+                <Tab onClick={() => goto("/integration")}> Integrations</Tab>
                 <Tab onClick={() => goto("/pricing")}>Pricing</Tab>
               </TabList>
             </Tabs>
@@ -91,7 +91,7 @@ const Navbar = () => {
               onClick={() => {
                 navigate("/signup");
               }}
-               >
+            >
               Try Harvest free
             </Button>
           </HStack>
