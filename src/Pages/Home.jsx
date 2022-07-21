@@ -14,6 +14,15 @@ import Footer from "../Component/Footer";
 import React from "react";
 
 import Navbar from "../Component/Navbar";
+<<<<<<< HEAD
+const Home = () => {
+  return (
+    <Box>
+      <Navbar />
+    </Box>
+  );
+
+=======
 import { StarIcon } from "@chakra-ui/icons";
 import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
@@ -238,6 +247,7 @@ const Home = () => {
 
     </Box>
   );
+>>>>>>> 5f75f0199d8207b600500cfd859eaf59359bab93
 };
 
 export default Home;
