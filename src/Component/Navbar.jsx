@@ -1,48 +1,30 @@
 import React from "react";
 
-
-import {
-  Box,
-  Button,
-  Flex,
-  HStack,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
+import { Tabs, TabList, Tab } from "@chakra-ui/react";
 
 import homeIMG from "../Img/home.png";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 
-
 const Navbar = () => {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
-
-
-
-
+  const goto = (link) => {
+    navigate(link);
+  };
   return (
-    <Box
-      className="Box"
-      border={"1px solid #fff8f1"}
-      height="100px"
-      bg="#fff8f1"
-    >
-      <Flex border={"1px solid #fff8f1"} margin="25px 100px">
+    <Box className="Box" height="100px">
+      <Flex margin="25px 100px">
         <Box>
           <RouterLink to="/">
             <Image height={"35px"} src={homeIMG} />
           </RouterLink>
         </Box>
 
-        <HStack
-          border="1px solid #fff8f1"
-          width="90%"
-          justifyContent="space-between"
-        >
+        <HStack width="90%" justifyContent="space-between">
           <HStack
-            gap="10px"
-            marginLeft="50px"
+            gap="8px"
+            marginLeft="25px"
             fontSize={"lg"}
             fontWeight={"bold"}
             bg="#fff8f1"
@@ -59,12 +41,22 @@ const Navbar = () => {
             <RouterLink to="">
               <Text _hover={{ color: "red" }}>Integrations</Text>
             </RouterLink>
-            <RouterLink to="">
+            <RouterLink to="/pricing">
               <Text _hover={{ color: "red" }}>Pricing</Text>
             </RouterLink>
+
+            {/* <Tabs colorScheme="orange" border={"#fff8f1"}>
+              <TabList>
+                <Tab onClick={() => goto("/")}>Why Harvest?</Tab>
+                <Tab onClick={() => goto("/")}> Features</Tab>
+                <Tab onClick={() => goto("/")}>Customers</Tab>
+                <Tab onClick={() => goto("/integration")}> Integrations</Tab>
+                <Tab onClick={() => goto("/pricing")}>Pricing</Tab>
+              </TabList>
+            </Tabs> */}
           </HStack>
           <HStack>
-            <RouterLink to="">
+            <RouterLink to="/login">
               <Text
                 _hover={{ color: "red" }}
                 marginRight={"10px"}
@@ -72,7 +64,7 @@ const Navbar = () => {
                 fontSize={"lg"}
                 fontWeight={"bold"}
               >
-                Sign Up
+                Sign In
               </Text>
             </RouterLink>
             <Button
@@ -84,7 +76,7 @@ const Navbar = () => {
               colorScheme={"red"}
               color="white"
               onClick={() => {
-                navigate("/signup")
+                navigate("/signup");
               }}
             >
               Try Harvest free

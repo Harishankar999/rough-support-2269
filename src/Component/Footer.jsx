@@ -4,7 +4,6 @@ import {
   Button,
   Container,
   HStack,
-  Link,
   SimpleGrid,
   Stack,
   Text,
@@ -23,7 +22,8 @@ const Logo = () => {
   );
 };
 
-const ListHeader = ({ children }) => {
+
+const ListHeader = ( {children}) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
@@ -84,7 +84,7 @@ export default function Footer() {
                 <Text _hover={{ color: "red" }}>Webinars</Text>
               </RouteLink>
               <RouteLink to="">
-                <Text _hover={{ color: "red" }}>Help & support</Text>
+                <Text _hover={{ color: "red" }}>Help  support</Text>
               </RouteLink>
               <RouteLink to="">
                 <Text _hover={{ color: "red" }}>Integrate with Harvest</Text>

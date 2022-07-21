@@ -2,6 +2,7 @@ import * as types from "./actionTypes";
 
 const initialState = {
   isRegd: false,
+  isLogged:false,
   isLoading: false,
   isError: false,
   token:null
@@ -25,6 +26,19 @@ const reducer = (state = initialState, action) => {
             isError:true,
             token:payload
         }
+      case types.LOGIN_USER_SUCCESS:
+        return{
+          isLogged:true,
+          isLoading:false,
+          isError:false,
+          token:payload
+        }  
+
+        case types.LOGIN_USER_FAILURE:
+          return{
+            isLoading:false,
+            isError:true
+          }
     default:
       return state;
   }
