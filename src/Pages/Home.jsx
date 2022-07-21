@@ -4,6 +4,7 @@ import {
   Divider,
   HStack,
   Image,
+  Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -14,6 +15,7 @@ import { StarIcon } from "@chakra-ui/icons";
 import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
 import { Link as RouterLink } from "react-router-dom";
+import CustomerStories from "../Component/CustomerStories";
 const Home = () => {
   return (
     <Box bg={"#fff8f1"}>
@@ -208,7 +210,7 @@ const Home = () => {
             />
           </HStack>
         </Box>
-        <Box width={"83%"} margin="auto" paddingTop={"40px"}>
+        <Box width={"83%"} margin="auto" padding={"40px 0px 40px 0px"}>
           <RouterLink to="">
             <Button
               fontSize={"20px"}
@@ -224,9 +226,100 @@ const Home = () => {
             </Button>
           </RouterLink>
         </Box>
-        
+        <Divider
+          margin={"auto"}
+          bg={"#fa5d00"}
+          orientation="horizontal"
+          width={"90%"}
+        />
+        <Box padding={"40px 0px 40px 0px"} width="90%" margin="auto">
+          <HStack border={"1px solid #fff8f1"}>
+            <Box width={"50%"}>
+              <Image
+                width={"100%"}
+                src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illustrations/integrations-home.svg"
+              />
+            </Box>
+            <Box
+              border={"1px solid #fff8f1"}
+              textAlign="left"
+              width={"50%"}
+              margin={"auto"}
+            >
+              <Text fontSize={"20px"} fontWeight="bold" color={"#fa5d00"}>
+                INTEGRATIONS
+              </Text>
+              <Text
+                padding={"10px 0px 10px 0px"}
+                width={"90%"}
+                fontSize={"40px"}
+              >
+                Integrated with the tools your team already knows and loves
+              </Text>
+              <Text
+                padding={"10px 0px 10px 0px"}
+                width="70%"
+                fontWeight={"300"}
+                fontSize={"25px"}
+              >
+                Your favorite apps work seamlessly with Harvest so you can keep
+                projects on track however you work.
+              </Text>
+              <RouterLink to="">
+                <Button
+                  fontSize={"20px"}
+                  height="50px"
+                  display="flex"
+                  colorScheme={"purple"}
+                  bg="black"
+                  color="white"
+                  borderRadius={"12px"}
+                  width="250px"
+                  marginTop="10px"
+                >
+                  Browser integrations
+                </Button>
+              </RouterLink>
+            </Box>
+          </HStack>
+        </Box>
+        <Divider
+          margin={"auto"}
+          bg={"#fa5d00"}
+          orientation="horizontal"
+          width={"90%"}
+        />
       </Box>
-
+      <CustomerStories />
+      <RouterLink to="">
+        <Stack
+          padding={"40px 0px 60px 0px"}
+          justifyContent={"flex-start"}
+          width="90%"
+          margin={"auto"}
+        >
+          <Button
+            fontSize={"20px"}
+            height="50px"
+            display="flex"
+            colorScheme={"purple"}
+            bg="black"
+            color="white"
+            borderRadius={"12px"}
+            width="250px"
+            marginTop="10px"
+          >
+            Meet Our Customer
+          </Button>
+        </Stack>
+      </RouterLink>
+      <Divider
+        orientation="horizontal"
+        width={"90%"}
+        margin={"auto"}
+        bg={"#fa5d00"}
+        height="1px"
+      />
       <Footer />
     </Box>
   );
