@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Link as RouteLink } from "react-router-dom";
 import {
   Box,
@@ -24,7 +23,7 @@ const Logo = () => {
   );
 };
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
