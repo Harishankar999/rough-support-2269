@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
 
-      <Home />
+      {/* <Home />
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -29,7 +29,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Home />
+      <Home /> */}
       <MainRoutes />
     </div>
   );

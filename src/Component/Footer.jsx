@@ -24,7 +24,7 @@ const Logo = () => {
   );
 };
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}

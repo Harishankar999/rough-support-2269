@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeaturesTop = () => {
   return (
@@ -11,7 +12,15 @@ const FeaturesTop = () => {
         </p>
       </div>
       <div className="linksContainer">
-        
+        <Link>
+            <button>dfsdf</button>
+        </Link>
+        <Link>
+            <button>sdfsdf</button>
+        </Link>
+        <Link>
+            <button>dfsdfsd</button>
+        </Link>
       </div>
       <div className="line"></div>
     </div>
