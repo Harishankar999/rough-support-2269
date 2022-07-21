@@ -18,8 +18,6 @@ import { Link as RouterLink } from "react-router-dom";
 const Home = () => {
   return (
     <Box bg={"#fff8f1"}>
-      <Navbar />
-
       <Box>
         <HStack border="1px solid #fff8f1" width={"90%"} margin="auto">
           <Box width={"50%"} border="1px solid #fff8f1">

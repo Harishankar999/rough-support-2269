@@ -18,24 +18,20 @@ function Pricing() {
 
   return (
     <>
-      <Navbar />
-
       <Stack minH={"15vh"} direction={{ base: "column", md: "row" }}>
         <Flex p={10} flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "4xl" }}>
               <Text
-                as={"span"}
+                as={"samp"}
                 position={"relative"}
                 _after={{
                   content: "''",
-                  width: "100%",
                   height: useBreakpointValue({ base: "20%", md: "30%" }),
                   position: "absolute",
                   bottom: 1,
                   left: 0,
                   bg: "blue.400",
-                  fontFamily: "MuotoWeb,sans-serif",
                   zIndex: -1,
                 }}
               >

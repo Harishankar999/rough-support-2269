@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
-function Card({status, dollar, time}) {
+function Card({ status, dollar, time }) {
   return (
     <Box>
       <Center py={6}>
@@ -50,20 +50,17 @@ function Card({status, dollar, time}) {
             <Button
               mt={10}
               w={"full"}
-              bg={"green"}
               color={"white"}
               rounded={"xl"}
               boxShadow={"0 5px 20px 0px rgb(72 187 120 / 43%)"}
+              bgGradient="linear(to-r, green,green)"
               _hover={{
-                bg: "green.100",
-                color:'green'
-              }}
-              _focus={{
-                bg: "green.100",
-                color:'white'
+                bgGradient: "linear(to-r, green.100,green.100)",
+                boxShadow: "xl",
+                color: "green",
               }}
             >
-              Start your trial
+             30-day free trial
             </Button>
             <Text color="grey" textAlign="start" py="2">
               No credit card required.
@@ -75,7 +72,7 @@ function Card({status, dollar, time}) {
               display={"flex"}
               flexDirection={"column"}
               alignItems={"flex-start"}
-              mb={'20px'}
+              mb={"20px"}
             >
               <ListItem>
                 <ListIcon as={CheckIcon} color="green.400" />
