@@ -11,7 +11,6 @@ import {
 import React from "react";
 import Footer from "../Component/Footer";
 
-
 import Navbar from "../Component/Navbar";
 
 import { StarIcon } from "@chakra-ui/icons";
@@ -21,8 +20,6 @@ import { Link as RouterLink } from "react-router-dom";
 const Home = () => {
   return (
     <Box bg={"#fff8f1"}>
-      <Navbar />
-
       <Box>
         <HStack border="1px solid #fff8f1" width={"90%"} margin="auto">
           <Box width={"50%"} border="1px solid #fff8f1">
@@ -229,15 +226,16 @@ const Home = () => {
             </Button>
           </RouterLink>
         </Box>
-        
+
       </Box>
 
       <Footer />
 
-     
+
 
     </Box>
   );
+
 };
 
 export default Home;

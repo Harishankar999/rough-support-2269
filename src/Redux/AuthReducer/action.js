@@ -10,6 +10,15 @@ const register = (payload) => (dispatch) => {
     .catch((err) => dispatch({ type: types.REGD_USER_FAILURE, payload: err }));
 };
 
-export { register };
+const login = (pay) => (dispatch) => {
+  return axios
+    .post("https://reqres.in/api/login", pay)
+    .then((res) =>
+      dispatch({ type: types.LOGIN_USER_SUCCESS, payload: res.data })
+    )
+    .catch((err) => dispatch({ type: types.LOGIN_USER_FAILURE, payload: err }));
+};
+
+export { register, login };
 
 // https://reqres.in/api/register
