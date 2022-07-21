@@ -26,7 +26,6 @@ const Navbar = () => {
       className="Box"
       border={"1px solid #fff8f1"}
       height="100px"
-      bg="#fff8f1"
     >
       <Flex border={"1px solid #fff8f1"} margin="25px 100px">
         <Box>
@@ -59,7 +58,7 @@ const Navbar = () => {
             <RouterLink to="">
               <Text _hover={{ color: "red" }}>Integrations</Text>
             </RouterLink>
-            <RouterLink to="">
+            <RouterLink to="/pricing">
               <Text _hover={{ color: "red" }}>Pricing</Text>
             </RouterLink>
           </HStack>
