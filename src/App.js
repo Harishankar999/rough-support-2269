@@ -1,25 +1,20 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./Pages/Home";
-=======
-import logo from './logo.svg';
+
 import './App.css';
->>>>>>> ef81b2a (Initialize project using Create React App)
-=======
-import logo from "./logo.svg";
+
+
 import "./App.css";
-import Home from "./Pages/Home";
->>>>>>> 31d4de3 (Basic Structure)
+import MainRoutes from './Pages/MainRoutes';
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       <Home />
-=======
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -34,10 +29,8 @@ function App() {
           Learn React
         </a>
       </header>
->>>>>>> ef81b2a (Initialize project using Create React App)
-=======
       <Home />
->>>>>>> 31d4de3 (Basic Structure)
+      <MainRoutes />
     </div>
   );
 }
