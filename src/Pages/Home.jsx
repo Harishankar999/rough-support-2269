@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Footer from "../Component/Footer";
+
 import Navbar from "../Component/Navbar";
 
 import { StarIcon } from "@chakra-ui/icons";

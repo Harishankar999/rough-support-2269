@@ -23,11 +23,6 @@ function App() {
       )}
 
 
-     
-
-      
-
-
       <MainRoutes />
     </div>
   );

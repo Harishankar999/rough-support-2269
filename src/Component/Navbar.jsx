@@ -42,7 +42,11 @@ const Navbar = () => {
             fontWeight={"bold"}
             bg="#fff8f1"
           >
+
+            <RouterLink to="/whyharvest">
+
             {/* <RouterLink to="">
+
               <Text _hover={{ color: "red" }}>Why Harvest?</Text>
             </RouterLink>
             <RouterLink to="">
