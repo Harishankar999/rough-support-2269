@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Flex,
-  HStack,
-  Image,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import homeIMG from "../Img/home.png";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -21,7 +13,7 @@ const Navbar = () => {
     >
       <Flex border={"1px solid #fff8f1"} margin="25px 100px">
         <Box>
-          <RouterLink to="">
+          <RouterLink to="/">
             <Image height={"35px"} src={homeIMG} />
           </RouterLink>
         </Box>

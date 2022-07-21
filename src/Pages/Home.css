@@ -1,0 +1,11 @@
+.span {
+  font-weight: 500;
+  color: black;
+}
+.span2 {
+  color: #fa5d00;
+}
+.span3 {
+  display: block;
+  font-size: 23px;
+}
