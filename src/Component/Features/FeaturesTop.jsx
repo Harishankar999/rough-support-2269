@@ -12,14 +12,32 @@ const FeaturesTop = () => {
         </p>
       </div>
       <div className="linksContainer">
-        <Link>
-            <button>dfsdf</button>
+        <Link to="">
+          <button>
+            <img
+              src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg"
+              alt=""
+            />
+            Time Tracking
+          </button>
         </Link>
-        <Link>
-            <button>sdfsdf</button>
+        <Link to="">
+          <button>
+            <img
+              src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-report.svg"
+              alt=""
+            />
+            Reports & Analysis
+          </button>
         </Link>
-        <Link>
-            <button>dfsdfsd</button>
+        <Link to="">
+          <button>
+            <img
+              src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-invoice.svg"
+              alt=""
+            />
+            Invoicing & Payments
+          </button>
         </Link>
       </div>
       <div className="line"></div>
