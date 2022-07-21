@@ -1,139 +1,129 @@
 import React, { useEffect, useState } from 'react'
-// import { useSearchParams } from "react-router-dom"
-// import { useDispatch } from 'react-redux'
+import { useSearchParams } from "react-router-dom"
+import { useDispatch } from 'react-redux'
+import { Box } from '@chakra-ui/react'
 
 export const FilterSort = () => {
 
-    // const dispatch = useDispatch()
-    // const [searchParams, setSearchParams] = useSearchParams()
-
-    // const urlCategory = searchParams.getAll('category')
-
-    // const urlSort = searchParams.get('sortBy')
-    const [category, setCategory] = useState([])
-
-    // const [sortBy, setSortBy] = useState(urlSort || "")
-
-    // const handleChangebox = (e) => {
-    //     const option = e.target.value;
-    //     let newCateogry = [...category];
-
-    //     if (category.includes(option)) {
-    //         //remove it
-    //         newCateogry.splice(newCateogry.indexOf(option), 1)
-
-    //     } else {
-    //         newCateogry.push(option)
-    //     }
-    //     setCategory(newCateogry)
-    // }
-
-    // const handleSort = (e) => {
-    //     setSortBy(e.target.value)
-    // }
-
-    // useEffect(() => {
-    //     if (category || sortBy) {
-    //         let params = {};
-    //         category && (params.category = category);
-    //         sortBy && (params.sortBy = sortBy)
-    //         setSearchParams(params)
-    //         //  dispatch(getBooks({ params: { category } }))
-    //     }
-    // }, [category, dispatch, setSearchParams, sortBy])
-
-    // useEffect(() => {
-    //     if (sortBy) {
-    //         const params = {
-    //             category: searchParams.getAll('category'),
-    //             sortBy
-    //         };
 
 
-    //         setSearchParams(params)
-    //         // dispatch(getBooks(getBooksParams))
-    //     }
-    // }, [searchParams, dispatch, setSearchParams, sortBy])
+    const dispatch = useDispatch()
+    const [searchParams, setSearchParams] = useSearchParams()
+
+
+    const urlCategory = searchParams.getAll('category')
+
+    const [category, setCategory] = useState(urlCategory || [])
+
+
+
+
+    const handleChangebox = (e) => {
+        const option = e.target.value;
+        let newCategory = [...category];
+
+
+
+        if (category.includes(option)) {
+            //remove it
+            newCategory.splice(category.indexOf((option), 1))
+
+
+        } else {
+            newCategory.push(option)
+        }
+        setCategory(newCategory)
+    }
+
+    useEffect(() => {
+        if (category) {
+            let params = {};
+            category && (params.category = category);
+
+            setSearchParams(params)
+
+        }
+    }, [category, setSearchParams])
 
     return (
         <div>
 
-            <div>
+            <Box>
                 <input
-                    //  onChange={handleChangebox}
-                    type="checkbox" value="Novel" defaultChecked={category.includes('Novel')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="All" defaultChecked={category.includes('All')} />
                 <label>All Integrations</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    //onChange={handleChangebox}
-                    type="checkbox" value="Science" defaultChecked={category.includes('Science')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Analytics" defaultChecked={category.includes('Analytics')} />
                 <label>Analytics & reporting</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Browser" defaultChecked={category.includes('Browser')} />
                 <label>Browser extensions</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="communication" defaultChecked={category.includes('communication')} />
                 <label>Communication & CRM</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Contracts" defaultChecked={category.includes('Contracts')} />
                 <label>Contracts & proposals</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Development" defaultChecked={category.includes('Devlopment')} />
                 <label>Development & connectivity</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Featured" defaultChecked={category.includes('Featured')} />
                 <label>Featured integrations</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Finance" defaultChecked={category.includes('Finance')} />
                 <label>Finance & payments</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Issue" defaultChecked={category.includes('Issue')} />
                 <label>Issue tracking & support</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Productivity" defaultChecked={category.includes('Productivity')} />
                 <label>Productivity</label>
-            </div>
+            </Box>
 
-            <div>
+            <Box>
                 <input
-                    // onChange={handleChangebox}
-                    type="checkbox" value="Thirller" defaultChecked={category.includes('Thirller')} />
+                    onChange={handleChangebox}
+                    type="checkbox" value="Project" defaultChecked={category.includes('Project')} />
                 <label>Project management</label>
-            </div>
+            </Box>
 
 
         </div>

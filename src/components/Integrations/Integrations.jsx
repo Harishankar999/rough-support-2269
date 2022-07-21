@@ -12,7 +12,7 @@ export const Integrations = () => {
     return (
 
 
-        <Box width={'99%'} height='550px' border={'1px solid green'}>
+        <Box width={'99%'} height='550px' >
 
             <Box width={'97%'} height="500px"  >
                 <Flex width={"98%"} height="470px" margin={'auto'}  >
@@ -29,10 +29,10 @@ export const Integrations = () => {
 
                             {/* -----------round Box Start --------------- */}
 
-                            <Box className={styles.Round} position="absolute" top="9%"
+                            <a href="https://www.getharvest.com/integrations/asana">   <Box mt={'2%'} className={styles.Round} position="absolute" top="9%"
                                 left="68%" borderRadius={'50%'} width={'10%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'} >
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-asana.png?width=135&name=integration-bubble-asana.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* --------------------Top Box End--------------------- */}
 
@@ -44,56 +44,56 @@ export const Integrations = () => {
                             </Box>
                             {/* ------------------Center Box End----------------- */}
 
-                            <Box className={styles.Round} position="absolute" top="65%"
+                            <a href="https://www.getharvest.com/integrations/stripe">  <Box className={styles.Round} position="absolute" top="65%"
                                 left="69%" borderRadius={'50%'} width={'10%'} height="22%" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'} >
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-stripe.png?width=135&name=integration-bubble-stripe.png" alt="" />
 
-                            </Box>
+                            </Box></a>
 
                             {/* ----------------Bottom Box End-------------------- */}
 
 
-                            <Box className={styles.Round} position="absolute" top="35%"
+                            <a href="https://www.getharvest.com/integrations/trello">   <Box className={styles.Round} position="absolute" top="35%"
                                 left="85%" borderRadius={'50%'} width={'9%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'} >
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-trello.png?width=135&name=integration-bubble-trello.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* -------Center Box Right End -------------- */}
 
-                            <Box className={styles.Round} position="absolute" top="35%"
+                            <a href="https://www.getharvest.com/integrations/google-calendar">  <Box className={styles.Round} position="absolute" top="35%"
                                 left="54%" borderRadius={'50%'} width={'9%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'} >
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-gcal.png?width=135&name=integration-bubble-gcal.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* -------------Top Left Box ------------- */}
 
-                            <Box className={styles.Round} position="absolute" top="19%"
+                            <a href="https://www.getharvest.com/integrations/jira"> <Box className={styles.Round} position="absolute" top="19%"
                                 left="60%" borderRadius={'50%'} width={'9%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'}>
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-jira.png?width=135&name=integration-bubble-jira.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* ------------Top Left Box Corner----------------- */}
 
 
-                            <Box className={styles.Round} position="absolute" top="18%"
+                            <a href="https://www.getharvest.com/integrations/slack">    <Box className={styles.Round} position="absolute" top="18%"
                                 left="80%" borderRadius={'50%'} width={'9%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'}>
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-slack.png?width=135&name=integration-bubble-slack.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* ---------Top Right Box Corner------------------- */}
 
-                            <Box className={styles.Round} position="absolute" top="51%"
+                            <a href="https://www.getharvest.com/integrations/quickbooks-online">    <Box className={styles.Round} position="absolute" top="51%"
                                 left="79%" borderRadius={'50%'} width={'9%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'}>
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-qbo.png?width=135&name=integration-bubble-qbo.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* ----------Bottom Right Box Corner--------- */}
 
 
-                            <Box className={styles.Round} position="absolute" top="51%"
+                            <a href="https://www.getharvest.com/integrations/github">     <Box className={styles.Round} position="absolute" top="51%"
                                 left="60%" borderRadius={'50%'} width={'9%'} height="100px" border={'1px solid white'} paddingLeft="1%" paddingTop={'1%'}>
                                 <img width={'80%'} height="80px" src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-github.png?width=135&name=integration-bubble-github.png" alt="" />
-                            </Box>
+                            </Box></a>
 
                             {/* ----------Bottom Left Box Corner----------- */}
 

@@ -1,4 +1,5 @@
-export const Data = [
+{ 
+   "books": [
     {
       id: 1,
       imageUrl:
@@ -63,5 +64,5 @@ export const Data = [
       name: "HarvestSync",
       category:'communication'
     },
-  ];
-  
+  ]
+}
