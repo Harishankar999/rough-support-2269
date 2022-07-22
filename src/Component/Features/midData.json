@@ -13,7 +13,7 @@
                 },
                 {
                     "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-integrations.svg",
-                    "cardHeading": "Track time from browser, desktop, and mobile",
+                    "cardHeading": "Integrated with your workflow",
                     "cardPara": "Make it as easy as possible for your team to capture their time with dedicated apps across devices."
                 },
                 {
@@ -22,7 +22,56 @@
                     "cardPara": "Make it as easy as possible for your team to capture their time with dedicated apps across devices."
                 }
             ]
-
+        }
+    ],
+    "mid2": [
+        {
+            "id": 1,
+            "img": "https://www.getharvest.com/hs-fs/hubfs/screenshot-features-invoices-1.png?width=1181&name=screenshot-features-invoices-1.png",
+            "heading": "Invoicing & payments",
+            "para": "Turn your team’s tracked time and expenses into invoices and collect payment quickly with integrated online payments.",
+            "card": [
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-invoice.svg",
+                    "cardHeading": "Streamline your invoicing",
+                    "cardPara": "Easily create and send accurate invoices using your team’s time and expenses already tracked in Harvest."
+                },
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-payments.svg",
+                    "cardHeading": "Get paid fast with online payments",
+                    "cardPara": "PayPal and Stripe integrations let your clients quickly and conveniently pay invoices online."
+                },
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-books.svg",
+                    "cardHeading": "Keep your books up to date",
+                    "cardPara": "Automatically copy your Harvest invoices and payments to QuickBooks Online or Xero for simplified accounting."
+                }
+            ]
+        }
+    ],
+    "mid1": [
+        {
+            "id": 1,
+            "img": "https://www.getharvest.com/hs-fs/hubfs/screenshot-features-projects.png?width=1181&name=screenshot-features-projects.png",
+            "heading": "Reports & analysis",
+            "para": "A wide selection of visual reports keep projects running smoothly and your team supported.",
+            "card": [
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-budget.svg",
+                    "cardHeading": "Track time from browser, desktop, and mobile",
+                    "cardPara": "Make it as easy as possible for your team to capture their time with dedicated apps across devices."
+                },
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-capacity.svg",
+                    "cardHeading": "Integrated with your workflow",
+                    "cardPara": "See who’s overworked and who’s under-utilized at a glance with capacity reporting."
+                },
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-costs.svg",
+                    "cardHeading": "Integrated with your workflow",
+                    "cardPara": "Keep track of internal costs and review past project data to inform future project scope and estimates."
+                }
+            ]
         }
     ]
 }

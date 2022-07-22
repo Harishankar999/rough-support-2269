@@ -1,19 +1,18 @@
 import React from "react";
 import "../../Styles/midPromo.scss";
-const MidPromo = () => {
+const MidPromo = ({promo, img}) => {
   return (
     <div className="promoContainer">
       <div className="promo">
         <div>
           <img
-            src="https://www.getharvest.com/hs-fs/hubfs/site-images/features-quote-1.jpg?width=563&name=features-quote-1.jpg"
+            src={img}
             alt=""
           />
         </div>
         <div>
           <p>
-            Harvest’s easy, clean time tracking allows us to focus on the tough
-            engineering problems where we bring value to our clients.
+            {promo}
           </p>
         </div>
       </div>
