@@ -1,3 +1,4 @@
+
 import {
   Box,
   Button,
@@ -10,8 +11,15 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Footer from "../Component/Footer";
+
+
 import Navbar from "../Component/Navbar";
+
 import { ArrowForwardIcon, StarIcon } from "@chakra-ui/icons";
+
+
+import { StarIcon } from "@chakra-ui/icons";
+
 import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
 import { Link as RouterLink } from "react-router-dom";
@@ -19,7 +27,6 @@ import CustomerStories from "../Component/CustomerStories";
 const Home = () => {
   return (
     <Box bg={"#fff8f1"}>
-      <Navbar />
       <Box>
         <HStack border="1px solid #fff8f1" width={"90%"} margin="auto">
           <Box width={"50%"} border="1px solid #fff8f1">
@@ -226,6 +233,7 @@ const Home = () => {
             </Button>
           </RouterLink>
         </Box>
+
         <Divider
           margin={"auto"}
           bg={"#fa5d00"}
@@ -448,10 +456,15 @@ const Home = () => {
             <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" />
           </Box>
         </HStack>
+
       </Box>
       <Footer />
+
+
+
     </Box>
   );
+
 };
 
 export default Home;
