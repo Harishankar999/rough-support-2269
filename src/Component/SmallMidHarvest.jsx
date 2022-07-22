@@ -50,7 +50,6 @@ const SmallMidHarvest = ({ items }) => {
           <button>Browse features</button>
         </div>
       </div>
-      <div className="line"></div>
     </div>
   );
 };

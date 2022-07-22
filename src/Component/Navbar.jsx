@@ -96,6 +96,7 @@ const Navbar = () => {
                 bg={"#fa5d00"}
                 colorScheme={"red"}
                 color="white"
+                onClick={() => goto("/signup")}
               >
                 Try Harvest free
               </Button>

@@ -18,6 +18,8 @@ import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
 import { Link as RouterLink } from "react-router-dom";
 import CustomerStories from "../Component/CustomerStories";
+import TimeTracking from "../Component/TimeTracking";
+import Partners from './../Component/Partners';
 const Home = () => {
   return (
     <Box bg={"#fff8f1"}>
@@ -115,23 +117,9 @@ const Home = () => {
           </Text>
           <Divider bg={"#fa5d00"} orientation="horizontal" width={"70%"} />
         </HStack>
-        <HStack
-          padding={"40px 0px 40px 0px"}
-          alignItems={"center"}
-          width={"90%"}
-          margin="auto"
-          justifyContent={"space-around"}
-        >
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-conde.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-dell.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-amnesty.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-deloitte.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize" />
-          <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize" />
-        </HStack>
-        <Divider bg={"#fa5d00"} orientation="horizontal" width={"100%"} />
+        <Box mt={10}>
+          <Partners />
+        </Box>
         <Box
           paddingTop={"70px"}
           border={"1px solid #fff8f1"}
@@ -420,43 +408,8 @@ const Home = () => {
         bg={"#fa5d00"}
         height="1px"
       />
-      <Box padding={"60px 0px 60px 0px"} border={"1px solid white"}>
-        <HStack textAlign={"left"} width={"90%"} margin="auto">
-          <Box width={"50%"}>
-            <VStack textAlign={"left"}>
-              <Text width={"90%"} fontSize={"40px"}>
-                Start tracking time today
-              </Text>
-              <Text width={"90%"} fontWeight={"300"} fontSize={"25px"}>
-                Join 70,000+ companies spending their time wisely with Harvest.
-              </Text>
-              <HStack
-                padding={"30px"}
-                justifyContent={"space-between"}
-                gap="40px"
-              >
-                <RouterLink to="">
-                  <Button
-                    fontSize={"lg"}
-                    height={"45px"}
-                    width="200px"
-                    borderRadius="10px"
-                    bg={"#fa5d00"}
-                    colorScheme={"red"}
-                    color="white"
-                  >
-                    Try Harvest free
-                  </Button>
-                </RouterLink>
-                <Text>Free 30-day trial. No credit card required.</Text>
-              </HStack>
-            </VStack>
-          </Box>
-          <Box width={"50%"} paddingLeft="50px">
-            <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" />
-          </Box>
-        </HStack>
-      </Box>
+     
+      <TimeTracking />
 
       <Footer />
     </Box>
