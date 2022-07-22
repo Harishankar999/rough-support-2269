@@ -45,11 +45,13 @@ const Navbar = () => {
 
             <RouterLink to="/whyharvest">
 
+
             {/* <RouterLink to="">
+
 
               <Text _hover={{ color: "red" }}>Why Harvest?</Text>
             </RouterLink>
-            <RouterLink to="">
+            <RouterLink to="/features">
               <Text _hover={{ color: "red" }}>Features</Text>
             </RouterLink>
             <RouterLink to="">

@@ -22,7 +22,9 @@ const Logo = () => {
   );
 };
 
-const ListHeader = ( {children}) => {
+
+const ListHeader = ({ children }) => {
+
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
