@@ -5,6 +5,7 @@ import { Box, VStack, Flex, Heading, Text, } from "@chakra-ui/react"
 
 import styles from "./Integration.module.css"
 import { IntegrationPart2 } from './IntegrationPart2'
+import Footer from '../Footer'
 
 
 
@@ -105,6 +106,7 @@ export const Integrations = () => {
                 </Flex>
             </Box>
             <IntegrationPart2 />
+            <Footer/>
         </Box>
 
 

@@ -8,7 +8,6 @@ import TrialCard from "../Component/TrialCard";
 const WhyHarvestPage = () => {
   return (
     <div>
-      <Navbar />
       <TrialCard />
       <MidHarvest />
       <Partners />

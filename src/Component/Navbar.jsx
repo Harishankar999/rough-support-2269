@@ -43,7 +43,7 @@ const Navbar = () => {
             bg="#fff8f1"
           >
 
-            <RouterLink to="/whyharvest">
+            {/* <RouterLink to="/whyharvest"> */}
 
 
             {/* <RouterLink to="">
@@ -66,8 +66,8 @@ const Navbar = () => {
 
             <Tabs colorScheme='orange' border={'#fff8f1'} >
               <TabList>
-                <Tab onClick={() => goto("/")}>Why Harvest?</Tab>
-                <Tab onClick={() => goto("/")}> Features</Tab>
+                <Tab onClick={() => goto("/whyharvest")}>Why Harvest?</Tab>
+                <Tab onClick={() => goto("/features")}> Features</Tab>
                 <Tab onClick={() => goto("/")}>Customers</Tab>
                 <Tab onClick={() => goto("/integration")}> Integrations</Tab>
                 <Tab onClick={() => goto("/pricing")}>Pricing</Tab>
@@ -100,22 +100,6 @@ const Navbar = () => {
                 Try Harvest free
               </Button>
             </RouterLink>
-
-            <Button
-              fontSize={"lg"}
-              height={"45px"}
-              width="200px"
-              borderRadius="10px"
-              bg={"#fa5d00"}
-              colorScheme={"red"}
-              color="white"
-              onClick={() => {
-                navigate("/signup");
-              }}
-            >
-              Try Harvest free
-            </Button>
-
           </HStack>
         </HStack>
       </Flex>

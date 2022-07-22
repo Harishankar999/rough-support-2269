@@ -1,7 +1,7 @@
-
 import {
   Box,
   Button,
+  color,
   Divider,
   HStack,
   Image,
@@ -12,13 +12,7 @@ import {
 import React from "react";
 import Footer from "../Component/Footer";
 
-
-import Navbar from "../Component/Navbar";
-
 import { ArrowForwardIcon, StarIcon } from "@chakra-ui/icons";
-
-
-import { StarIcon } from "@chakra-ui/icons";
 
 import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
@@ -165,7 +159,7 @@ const Home = () => {
                   width={"80%"}
                   padding="20px"
                   cursor={"pointer"}
-                  _hover={{ bg: "red.100" }}
+                  _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
                   margin="auto"
                 >
                   <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg" />
@@ -182,7 +176,7 @@ const Home = () => {
                   width={"82%"}
                   padding="20px"
                   cursor={"pointer"}
-                  _hover={{ bg: "red.100" }}
+                  _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
                   margin="auto"
                 >
                   <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-reporting.svg" />
@@ -200,7 +194,7 @@ const Home = () => {
                   width={"89%"}
                   padding="20px"
                   cursor={"pointer"}
-                  _hover={{ bg: "red.100" }}
+                  _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
                   margin="auto"
                 >
                   <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-invoicing.svg" />
@@ -350,7 +344,9 @@ const Home = () => {
           </Box>
           <VStack width={"50%"}>
             <Box
-              _hover={{ bg: "red.100" }}
+              _hover={{
+                border: "1px solid red",
+              }}
               borderTop={"1px solid red"}
               width="90%"
               padding="20px"
@@ -370,7 +366,9 @@ const Home = () => {
               </HStack>
             </Box>
             <Box
-              _hover={{ bg: "red.100" }}
+              _hover={{
+                border: "1px solid red",
+              }}
               borderTop={"1px solid red"}
               width="90%"
               padding="20px"
@@ -390,7 +388,9 @@ const Home = () => {
               </HStack>
             </Box>
             <Box
-              _hover={{ bg: "red.100" }}
+              _hover={{
+                border: "1px solid red",
+              }}
               borderTop={"1px solid red"}
               width="90%"
               borderBottom="1px solid red"
@@ -420,7 +420,7 @@ const Home = () => {
         bg={"#fa5d00"}
         height="1px"
       />
-      <Box bg={"white"} padding={"60px 0px 60px 0px"} border={"1px solid white"}>
+      <Box padding={"60px 0px 60px 0px"} border={"1px solid white"}>
         <HStack textAlign={"left"} width={"90%"} margin="auto">
           <Box width={"50%"}>
             <VStack textAlign={"left"}>
@@ -456,15 +456,11 @@ const Home = () => {
             <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" />
           </Box>
         </HStack>
-
       </Box>
+
       <Footer />
-
-
-
     </Box>
   );
-
 };
 
 export default Home;

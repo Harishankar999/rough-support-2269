@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Tabs, TabList,  Tab } from "@chakra-ui/react";
 import { Card } from "../Component/Card";
+import Footer from "../Component/Footer";
 
 function Pricing() {
   const [dollar, setDollar] = useState(12);
@@ -71,6 +72,7 @@ function Pricing() {
         <Card status={"Free"} dollar={"0"} time={"Forever"} />
         <Card status={"Pro"} dollar={dollar} time={time} />
       </Flex>
+      <Footer/>
     </>
   );
 }
