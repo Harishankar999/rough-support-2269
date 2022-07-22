@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../Component/Footer";
 import MidHarvest from "../Component/MidHarvest";
-import Navbar from "../Component/Navbar";
 import Partners from "../Component/Partners";
 import TrialCard from "../Component/TrialCard";
 

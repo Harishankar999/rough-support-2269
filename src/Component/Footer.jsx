@@ -1,12 +1,9 @@
-import { ReactNode } from "react";
-
 import {
   Box,
   Button,
   Container,
   Divider,
   HStack,
-  Link,
   SimpleGrid,
   Stack,
   Text,
@@ -14,10 +11,17 @@ import {
 } from "@chakra-ui/react";
 import { Link as RouteLink } from "react-router-dom";
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-const Logo = (props: any) => {
+
+const col = {
+  bg: "rgb(29, 28, 28)",
+  color: "white",
+  _hover: { color: "#fa5d00" },
+};
+
+const Logo = () => {
   return (
     <Box>
-      <Text marginLeft={"-80px"} fontSize={"6xl"}>
+      <Text marginLeft={"-80px"} fontSize={"6xl"} {...col}>
         {" "}
         Harvest
       </Text>
@@ -25,103 +29,124 @@ const Logo = (props: any) => {
   );
 };
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
-  return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
-      {children}
-    </Text>
-  );
-};
 
 export default function Footer() {
   return (
-    <Box>
+    <Box {...col}>
       <Divider
         orientation="horizontal"
         width={"100%"}
         margin={"auto"}
-        bg={"#fa5d00"}
         height="1px"
       />
-      <Container as={Stack} maxW={"6xl"} py={10}>
+      <Container as={Stack} maxW={"5xl"} py={10} {...col}>
         <SimpleGrid
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 1fr 1fr" }}
           spacing={8}
+          {...col}
         >
-          <Stack spacing={6}>
+          <Stack spacing={6} {...col}>
             <Box>
               <Logo color={useColorModeValue("gray.700", "white")} />
             </Box>
           </Stack>
-          <Stack align={"flex-start"} width="200px" marginLeft={"150px"}>
-            <ListHeader>Harvest</ListHeader>
+          <Stack
+            align={"flex-start"}
+            width="200px"
+            marginLeft={"150px"}
+            {...col}
+          >
+            <Text
+              fontWeight={600}
+              fontSize={"2xl"}
+              color="white"
+              bg="rgb(29, 28, 28)"
+            >
+              HARVEST
+            </Text>
+
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Home</Text>
+              <Text {...col}>Home</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Why Harvest?</Text>
+              <Text {...col}>Why Harvest?</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Features</Text>
+              <Text {...col}>Features</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Pricing</Text>
+              <Text {...col}>Pricing</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Integrations</Text>
+              <Text {...col}>Integrations</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Apps</Text>
+              <Text {...col}>Apps</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Security</Text>
-            </RouteLink>
-          </Stack>
-          <Stack align={"flex-start"} width="200px" marginLeft="70px">
-            <ListHeader>Community</ListHeader>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Customer stories</Text>
-            </RouteLink>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Resources</Text>
-            </RouteLink>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Webinars</Text>
-            </RouteLink>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Help support</Text>
-            </RouteLink>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Integrate with Harvest</Text>
-            </RouteLink>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Time Well Spent</Text>
-            </RouteLink>
-            <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Time in This Time</Text>
+              <Text {...col}>Security</Text>
             </RouteLink>
           </Stack>
-          <Stack align={"flex-start"} width="200px" marginLeft="70px">
-            <ListHeader>Company</ListHeader>
+          <Stack align={"flex-start"} width="200px" marginLeft="70px" {...col}>
+            <Text
+              fontWeight={600}
+              fontSize={"2xl"}
+              color="white"
+              bg="rgb(29, 28, 28)"
+            >
+              COMMUNITY
+            </Text>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>About us</Text>
+              <Text {...col}>Customer stories</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Blog</Text>
+              <Text {...col}>Resources</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Careers</Text>
+              <Text {...col}>Webinars</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Legal</Text>
+              <Text {...col}>Help support</Text>
             </RouteLink>
             <RouteLink to="">
-              <Text _hover={{ color: "red" }}>Contact us</Text>
+              <Text {...col}>Integrate with Harvest</Text>
+            </RouteLink>
+            <RouteLink to="">
+              <Text {...col}>Time Well Spent</Text>
+            </RouteLink>
+            <RouteLink to="">
+              <Text {...col}>Time in This Time</Text>
+            </RouteLink>
+          </Stack>
+          <Stack align={"flex-start"} width="200px" marginLeft="70px" {...col}>
+            <Text
+              fontWeight={600}
+              fontSize={"2xl"}
+              color="white"
+              bg="rgb(29, 28, 28)"
+            >
+              COMPANY
+            </Text>
+
+            <RouteLink to="">
+              <Text {...col}>About us</Text>
+            </RouteLink>
+            <RouteLink to="">
+              <Text {...col}>Blog</Text>
+            </RouteLink>
+            <RouteLink to="">
+              <Text {...col}>Careers</Text>
+            </RouteLink>
+            <RouteLink to="">
+              <Text {...col}>Legal</Text>
+            </RouteLink>
+            <RouteLink to="">
+              <Text {...col}>Contact us</Text>
             </RouteLink>
           </Stack>
         </SimpleGrid>
       </Container>
-      <Box width={"90%"} margin="auto">
+      <Box width={"90%"} margin="auto" {...col}>
         <Button
           width={"80%"}
           color="black.700"
@@ -131,6 +156,7 @@ export default function Footer() {
           borderRadius="50px"
           marginLeft={"150px"}
           border="1px solid"
+          {...col}
         >
           We also make: Harvest Forecast – the fast and simple way to schedule
           your team across projects.
@@ -143,9 +169,10 @@ export default function Footer() {
         marginTop="50px"
         justifyContent={"space-between"}
         padding="20px 0px 20px 0px"
+        {...col}
       >
         <Box>
-          <Text fontWeight={"500"} fontSize={"lg"}>
+          <Text fontWeight={"500"} fontSize={"lg"} {...col}>
             © 2006-2022 Harvest
           </Text>
         </Box>
@@ -153,18 +180,19 @@ export default function Footer() {
           justifyContent={"space-between"}
           width="400px"
           cursor={"pointer"}
+          {...col}
         >
-          <HStack>
-            <BsTwitter />
-            <Text> Twitter</Text>
+          <HStack {...col}>
+            <BsTwitter color="red" size={20} />
+            <Text {...col}> Twitter</Text>
           </HStack>
-          <HStack>
-            <BsLinkedin />
-            <Text> Linkedin</Text>
+          <HStack {...col}>
+            <BsLinkedin color="red" size={20} />
+            <Text {...col}> Linkedin</Text>
           </HStack>
-          <HStack>
-            <BsInstagram />
-            <Text> Twitter</Text>
+          <HStack {...col}>
+            <BsInstagram color="red" size={20} />
+            <Text {...col}> Twitter</Text>
           </HStack>
         </HStack>
       </HStack>

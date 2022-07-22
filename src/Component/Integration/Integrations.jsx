@@ -106,7 +106,7 @@ export const Integrations = () => {
                 </Flex>
             </Box>
             <IntegrationPart2 />
-            <Footer/>
+            {/* <Footer/> */}
         </Box>
 
 

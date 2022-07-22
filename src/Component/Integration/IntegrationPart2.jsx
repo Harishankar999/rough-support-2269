@@ -154,8 +154,6 @@ export const IntegrationPart2 = () => {
 
                     </Flex>
                 </Box>
-
-
             </div>
         </>
     )
