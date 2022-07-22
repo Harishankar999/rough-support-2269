@@ -86,6 +86,21 @@ const Navbar = () => {
                 Sign In
               </Text>
             </RouterLink>
+
+            <RouterLink to="">
+              <Button
+                fontSize={"lg"}
+                height={"45px"}
+                width="200px"
+                borderRadius="10px"
+                bg={"#fa5d00"}
+                colorScheme={"red"}
+                color="white"
+              >
+                Try Harvest free
+              </Button>
+            </RouterLink>
+
             <Button
               fontSize={"lg"}
               height={"45px"}
@@ -100,6 +115,7 @@ const Navbar = () => {
             >
               Try Harvest free
             </Button>
+
           </HStack>
         </HStack>
       </Flex>
