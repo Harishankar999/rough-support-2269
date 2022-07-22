@@ -4,6 +4,8 @@ import MidFeature from "../Component/Features/MidFeature";
 import Navbar from "../Component/Navbar";
 import data from "../Component/Features/midData.json";
 import MidPromo from "../Component/Features/MidPromo";
+import Footer from "../Component/Footer";
+
 
 const Features = () => {
   const mid = data.mid;
@@ -11,10 +13,9 @@ const Features = () => {
   const mid2 = data.mid2;
   return (
     <div>
-      <Navbar />
       <FeaturesTop />
       {mid.map((i) => {
-        return <MidFeature key={i.id} items={{ ...i }} />;
+        return <MidFeature id="timeTracking" key={i.id} items={{ ...i }} />;
       })}
       <MidPromo
         img={
@@ -24,7 +25,7 @@ const Features = () => {
             engineering problems where we bring value to our clients."
       />
       {mid1.map((i) => {
-        return <MidFeature key={i.id} items={{ ...i }} />;
+        return <MidFeature id="analysis" key={i.id} items={{ ...i }} />;
       })}
 
       <MidPromo
@@ -37,6 +38,9 @@ const Features = () => {
       {mid2.map((i) => {
         return <MidFeature key={i.id} items={{ ...i }} />;
       })}
+
+      <Footer />
+
     </div>
   );
 };
