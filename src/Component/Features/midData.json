@@ -1,0 +1,28 @@
+{
+    "mid": [
+        {
+            "id": 1,
+            "img": "https://www.getharvest.com/hs-fs/hubfs/screenshot-features-timesheets.png?width=1181&name=screenshot-features-timesheets.png",
+            "heading": "Time tracking",
+            "para": "An intuitive, lightweight time tracking experience that’s easy to adopt and use every day.",
+            "card": [
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-stopwatch.svg",
+                    "cardHeading": "Track time from browser, desktop, and mobile",
+                    "cardPara": "Make it as easy as possible for your team to capture their time with dedicated apps across devices."
+                },
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-integrations.svg",
+                    "cardHeading": "Track time from browser, desktop, and mobile",
+                    "cardPara": "Make it as easy as possible for your team to capture their time with dedicated apps across devices."
+                },
+                {
+                    "cardImg": "https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-80-stopwatch.svg",
+                    "cardHeading": "Track time from browser, desktop, and mobile",
+                    "cardPara": "Make it as easy as possible for your team to capture their time with dedicated apps across devices."
+                }
+            ]
+
+        }
+    ]
+}
