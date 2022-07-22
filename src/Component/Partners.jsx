@@ -3,7 +3,7 @@ import React from "react";
 import "../Styles/partners.scss";
 const Partners = () => {
   return (
-    <div className="brandsContainer">
+    <div className="brandsContainer" >
        <Divider
         orientation="horizontal"
         width={"95%"}
