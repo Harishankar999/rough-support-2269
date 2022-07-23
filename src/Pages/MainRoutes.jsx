@@ -12,6 +12,7 @@ import WhyHarvestPage from "./WhyHarvestPage";
 
 import { Pricing } from "./Pricing";
 import { Integrations } from "../Component/Integration/Integrations";
+import { Customers } from "../Component/Customers/Customers";
 
 const MainRoutes = () => {
   return (
@@ -24,7 +25,7 @@ const MainRoutes = () => {
         <Route path="/features" element={<Features />} />
 
         <Route path="/whyharvest" element={<WhyHarvestPage />} />
-
+        <Route path="/customers" element={<Customers />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/integration" element={<Integrations />} />
       </Routes>

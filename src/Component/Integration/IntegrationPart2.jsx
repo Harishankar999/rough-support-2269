@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { Box, Button, Flex, Grid, GridItem, Heading, HStack, Input, Text, VStack, } from "@chakra-ui/react"
+import { Box, Flex, Grid, GridItem, Heading, HStack, Input, Text, VStack, } from "@chakra-ui/react"
 
 import { SearchIcon } from '@chakra-ui/icons'
 
@@ -11,6 +11,7 @@ import { FilterSort } from './FilterSort'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation, useSearchParams } from 'react-router-dom'
 import { getData } from '../../Redux/Integration/action'
+import Footer from '../Footer'
 
 
 
@@ -109,7 +110,7 @@ export const IntegrationPart2 = () => {
 
                 <hr className={styles.hr} />
 
-                <Box>
+                <Box mb="2%">
                     <Flex>
                         <VStack p={'15px'} width='30%' height={'300px'}>
                             <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/illo-180-integrations.svg" alt="" />
@@ -153,6 +154,9 @@ export const IntegrationPart2 = () => {
                         </VStack>
 
                     </Flex>
+                </Box>
+                <Box width={'99%'} margin='auto'>
+                    <Footer />
                 </Box>
             </div>
         </>
