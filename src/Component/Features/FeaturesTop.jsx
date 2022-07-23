@@ -14,7 +14,7 @@ const FeaturesTop = () => {
       </div>
       <div className="linksContainer">
         <Link to="">
-          <div className="featuresLogo">
+          <div className="featuresLogo" style={{ marginRight: "10px" }}>
             <div className="logo">
               <img
                 src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-time.svg"
@@ -31,7 +31,7 @@ const FeaturesTop = () => {
           </div>
         </Link>
         <Link to="">
-          <div className="featuresLogo">
+          <div className="featuresLogo" style={{ marginRight: "10px" }}>
             <div className="logo">
               <img
                 src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/features/illo-nav-report.svg"

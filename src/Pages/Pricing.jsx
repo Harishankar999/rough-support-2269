@@ -23,7 +23,7 @@ function Pricing() {
   console.log(dollar, time);
 
   return (
-    <Box>
+    <Box textAlign={"center"}>
       <Stack minH={"15vh"} direction={{ base: "column", md: "row" }}>
         <Flex p={10} flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>

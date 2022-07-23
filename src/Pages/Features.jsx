@@ -5,7 +5,6 @@ import data from "../Component/Features/midData.json";
 import MidPromo from "../Component/Features/MidPromo";
 import Footer from "../Component/Footer";
 
-
 const Features = () => {
   const mid = data.mid;
   const mid1 = data.mid1;
@@ -39,7 +38,6 @@ const Features = () => {
       })}
 
       <Footer />
-
     </div>
   );
 };

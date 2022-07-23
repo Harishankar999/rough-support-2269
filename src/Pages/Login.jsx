@@ -43,7 +43,7 @@ export default function JoinOurTeam() {
 
 
   return (
-    <Box>
+    <Box textAlign={"center"}>
       <Image
         margin={"20px auto"}
         src="https://www.freelogovectors.net/wp-content/uploads/2022/05/harvest_logo_freelogovectors.net_.png"

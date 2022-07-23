@@ -30,19 +30,20 @@ export default function JoinOurTeam() {
     }
 
     if (username && password) {
-      dispatch(register({username, password})).then((r) => {
-        if(r.type === "REGD_USER_SUCCESS"){
-          alert('signup success')
-          navigate('/login')
-        }else{
-          alert('InValid Credentials')
+      dispatch(register({ username, password })).then((r) => {
+        if (r.type === "REGD_USER_SUCCESS") {
+          alert("signup success");
+          navigate("/login");
+        } else {
+          alert("InValid Credentials");
         }
-      })
+      });
     }
   };
 
   return (
     <Box
+      textAlign={"center"}
       border={"1px solid yellow"}
       width="100%"
       height="100vh"

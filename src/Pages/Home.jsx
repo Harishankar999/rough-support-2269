@@ -16,11 +16,16 @@ import { ArrowForwardIcon, StarIcon } from "@chakra-ui/icons";
 
 import { ImStarHalf } from "react-icons/im";
 import "./Home.css";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import CustomerStories from "../Component/CustomerStories";
 import TimeTracking from "../Component/TimeTracking";
-import Partners from './../Component/Partners';
+import Partners from "./../Component/Partners";
+import { useSelector } from "react-redux";
 const Home = () => {
+  // const isAuth = useSelector((state) => state.AuthReducer.isLogged);
+  // console.log(isAuth);
+  const navigate = useNavigate();
+
   return (
     <Box bg={"#fff8f1"}>
       <Box>
@@ -84,6 +89,7 @@ const Home = () => {
                 bg={"#fa5d00"}
                 colorScheme="cyan"
                 margin="20px 0px 20px 0px"
+                // onClick={handleIsAuth}
               >
                 Get Started
               </Button>
@@ -147,7 +153,10 @@ const Home = () => {
                   width={"80%"}
                   padding="20px"
                   cursor={"pointer"}
-                  _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                  _hover={{
+                    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    border: "none",
+                  }}
                   margin="auto"
                 >
                   <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg" />
@@ -164,7 +173,10 @@ const Home = () => {
                   width={"82%"}
                   padding="20px"
                   cursor={"pointer"}
-                  _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                  _hover={{
+                    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    border: "none",
+                  }}
                   margin="auto"
                 >
                   <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-reporting.svg" />
@@ -182,7 +194,10 @@ const Home = () => {
                   width={"89%"}
                   padding="20px"
                   cursor={"pointer"}
-                  _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+                  _hover={{
+                    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    border: "none",
+                  }}
                   margin="auto"
                 >
                   <Image src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-invoicing.svg" />
@@ -408,7 +423,7 @@ const Home = () => {
         bg={"#fa5d00"}
         height="1px"
       />
-     
+
       <TimeTracking />
 
       <Footer />
