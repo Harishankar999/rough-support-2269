@@ -6,11 +6,11 @@
   .featuresFirst {
     @include flex;
     :nth-child(1) {
-        width: 100%;
+      width: 100%;
     }
     img {
-        border: 1px solid black;
-        border-radius: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
     }
     h2 {
       color: red;
@@ -19,9 +19,10 @@
     p {
       font-size: 1.5rem;
     }
-    button {
-        margin-top: 40px;
+    .btn {
+      margin-top: 40px;
       @include btn;
+      width: 50%;
     }
   }
   .featuresSecond {
@@ -29,19 +30,19 @@
     @include flex;
     .firstData {
       width: 30%;
-      
+
       :nth-child(1) {
         @include flex;
       }
-      h3{
+      h3 {
         font-size: 1.5rem;
       }
-      p{
+      p {
         font-weight: 500;
       }
     }
   }
-  .line{
+  .line {
     margin-top: 80px;
     @include line;
   }

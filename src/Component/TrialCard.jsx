@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/trialCard.scss";
+import { Link } from "react-router-dom";
 
 const TrialCard = () => {
   return (
@@ -12,7 +13,9 @@ const TrialCard = () => {
         </p>
       </div>
       <div className="btnContainer">
+        <Link to="/login">
         <button>Try Harvest Free</button>
+        </Link>
         <p>Free 30-day trial. No credit card required.</p>
       </div>
       <div className="line"></div>
