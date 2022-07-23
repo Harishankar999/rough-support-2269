@@ -4,9 +4,9 @@ $mainLightColor: #fc6a15;
 $hoverBtnColor: #fa782d;
 $mainBgColor: #fff8f2;
 
-@mixin btn($bg: $mainLightColor, $fontColor: white, $fontSize: 1.25rem) {
-  height: 50px;
-  width: 220px;
+@mixin btn($h:50px,$w:220px, $bg: $mainLightColor, $fontColor: white, $fontSize: 1.25rem) {
+  height: $h;
+  width: $w;
   background-color: $bg;
   border-radius: 0.95rem;
   color: $fontColor;

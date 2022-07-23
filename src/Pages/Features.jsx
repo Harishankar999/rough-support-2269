@@ -1,7 +1,6 @@
 import React from "react";
 import FeaturesTop from "../Component/Features/FeaturesTop";
 import MidFeature from "../Component/Features/MidFeature";
-import Navbar from "../Component/Navbar";
 import data from "../Component/Features/midData.json";
 import MidPromo from "../Component/Features/MidPromo";
 import Footer from "../Component/Footer";
@@ -15,7 +14,7 @@ const Features = () => {
     <div>
       <FeaturesTop />
       {mid.map((i) => {
-        return <MidFeature id="timeTracking" key={i.id} items={{ ...i }} />;
+        return <MidFeature key={i.id} items={{ ...i }} />;
       })}
       <MidPromo
         img={
@@ -25,7 +24,7 @@ const Features = () => {
             engineering problems where we bring value to our clients."
       />
       {mid1.map((i) => {
-        return <MidFeature id="analysis" key={i.id} items={{ ...i }} />;
+        return <MidFeature key={i.id} items={{ ...i }} />;
       })}
 
       <MidPromo
