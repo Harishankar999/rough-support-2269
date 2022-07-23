@@ -73,5 +73,82 @@
      "category":"communication",
      "desc":"Start timers, check someone's status, and keep track of project budgets."
    }
- ]
+ ],
+
+ 
+ "Customers": [
+  {
+    "id": 1,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/adamick/adamick-logo.svg",
+   
+    "category":"Architecture",
+    "desc":"Harvest helps Adamick Architecutre speed up invoicing and increase profitability."
+  },
+  {
+    "id": 2,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/public-logo.svg",
+    
+    "category":"Architecture",
+    "desc":"An architecture firm focused ont he public realm uses Harvest to keep fixed-fee projects profitable."
+  },
+  {
+    "id": 3,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/customers/rana/rana-logo.svg",
+ 
+    "category":"Architecture",
+    "desc":"Rana, an ecological design company, uses Harvest to keep track of their projects and billable hours in one place."
+  },
+  {
+    "id": 4,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/customers/area-17/area-17-logo.svg",
+  
+    "category":"Creative",
+    "desc":"Interactive design agency Area 17 checks Harvest reports to keep tabs on their business."
+  },
+  {
+    "id": 5,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/customers/ccd-innovation/ccd-logo-1.svg",
+  
+      "category":"Creative",
+    "desc":"Harvest helped culinary company CCD innovation step up their operational efficiency."
+  },
+   
+  {
+    "id": 6,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/customers/columbia/columbia-logo.svg",
+  
+      "category":"Creative",
+    "desc":"Columbia's creative team uses Harvest to balance internal stakeholders."
+  },
+  {
+    "id": 7,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/cooper-perkins/logo-cooper-perkins.svg",
+    
+    "category":"Engineering",
+    "desc":"Engineering practice Cooper Perkins uses Harvest to project future needs."
+  },
+  {
+    "id": 8,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/customers/crossley-acoustics/crossley-acoustics-logo.svg",
+  
+      "category":"Engineering",
+    "desc":"Acoustic design firm Crossley Acoustics uses harvest to track time from job sites."
+  },
+  {
+    "id": 9,
+    "imageUrl":
+      "https://www.getharvest.com/hubfs/customers/tekna/tekna-logo.svg",
+   
+      "category":"Engineering",
+    "desc":"Harvest helps product desing company Tekna save time by stramlining their process."
+  }
+]
 }

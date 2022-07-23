@@ -68,7 +68,7 @@ const Navbar = () => {
               <TabList>
                 <Tab onClick={() => goto("/whyharvest")}>Why Harvest?</Tab>
                 <Tab onClick={() => goto("/features")}> Features</Tab>
-                <Tab onClick={() => goto("/")}>Customers</Tab>
+                <Tab onClick={() => goto("/customers")}>Customers</Tab>
                 <Tab onClick={() => goto("/integration")}> Integrations</Tab>
                 <Tab onClick={() => goto("/pricing")}>Pricing</Tab>
               </TabList>
