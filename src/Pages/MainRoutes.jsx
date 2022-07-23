@@ -13,6 +13,7 @@ import WhyHarvestPage from "./WhyHarvestPage";
 import { Pricing } from "./Pricing";
 import { Integrations } from "../Component/Integration/Integrations";
 import { Customers } from "../Component/Customers/Customers";
+import RequiredAuth from "../HOC/RequiredAuth";
 
 const MainRoutes = () => {
   return (

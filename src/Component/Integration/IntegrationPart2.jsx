@@ -46,7 +46,7 @@ export const IntegrationPart2 = () => {
     }
   }, [loaction.search]);
 
-  console.log(INTData);
+  // console.log(INTData);
 
   return (
     <>
@@ -188,7 +188,7 @@ export const IntegrationPart2 = () => {
             </VStack>
           </Flex>
         </Box> */}
-        <TimeTracking/>
+        <TimeTracking />
         <Box width={"99%"} margin="auto">
           <Footer />
         </Box>

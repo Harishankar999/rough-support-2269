@@ -17,6 +17,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { getData_cust } from "../../Redux/Customers/action";
 import Footer from "../Footer";
+import TimeTracking from "../TimeTracking";
 
 export const Customers = () => {
   const [searchParams] = useSearchParams();
@@ -42,7 +43,7 @@ export const Customers = () => {
   }, [loaction.search]);
 
   return (
-    <Box margin={"auto"} width={"99%"}>
+    <Box textAlign={"center"} margin={"auto"} width={"99%"}>
       <Box pl={"8px"} width={"100%"} height="200px">
         <Heading fontSize={"5xl"}>
           See how Harvest helps teams like yours thrive
@@ -160,7 +161,7 @@ export const Customers = () => {
           height={"80px"}
         >
           <Box margin={"auto"} marginTop={"60px"}>
-            <Heading  fontSize={"4xl"} color={"black.900"}>
+            <Heading fontSize={"4xl"} color={"black.900"}>
               Find stories from teams like yours
             </Heading>
           </Box>
@@ -216,7 +217,7 @@ export const Customers = () => {
 
         <hr className={styles.hr} />
 
-        <Box>
+        {/* <Box>
           <Flex>
             <HStack width="50%" height={"300px"}>
               <Box p={"10px"} ml="5px" textAlign={"left"}>
@@ -241,7 +242,8 @@ export const Customers = () => {
               />
             </VStack>
           </Flex>
-        </Box>
+        </Box> */}
+        <TimeTracking />
       </Box>
 
       <Box width={"99%"} margin="auto">

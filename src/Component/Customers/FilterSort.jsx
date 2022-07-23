@@ -34,7 +34,7 @@ export const FilterSort = () => {
   }, [category, setSearchParams]);
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div style={{ marginTop: "30px", textAlign: "left" }}>
       <Box>
         <input
           onChange={handleChangebox}

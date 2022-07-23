@@ -89,7 +89,7 @@ const Home = () => {
                 bg={"#fa5d00"}
                 colorScheme="cyan"
                 margin="20px 0px 20px 0px"
-                // onClick={handleIsAuth}
+                onClick={navigate("/signup")}
               >
                 Get Started
               </Button>
@@ -225,6 +225,7 @@ const Home = () => {
               color="white"
               borderRadius={"12px"}
               width="250px"
+              onClick={navigate("/whyharvest")}
             >
               Discover all features
             </Button>
@@ -281,6 +282,7 @@ const Home = () => {
                   borderRadius={"12px"}
                   width="250px"
                   marginTop="10px"
+                  onClick={navigate("/integration")}
                 >
                   Browser integrations
                 </Button>
