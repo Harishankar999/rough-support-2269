@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.featuresMid {
+  width: 80%;
+  margin: 80px auto;
+  .featuresFirst {
+    @include flex;
+    :nth-child(1) {
+        width: 100%;
+    }
+    img {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    h2 {
+      color: red;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    button {
+        margin-top: 40px;
+      @include btn;
+    }
+  }
+  .featuresSecond {
+    margin-top: 80px;
+    @include flex;
+    .firstData {
+      width: 30%;
+      
+      :nth-child(1) {
+        @include flex;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+      p{
+        font-weight: 500;
+      }
+    }
+  }
+  .line{
+    margin-top: 80px;
+    @include line;
+  }
+}

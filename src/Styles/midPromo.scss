@@ -1,0 +1,21 @@
+@import "../../global.scss";
+.promoContainer{
+    .promo {
+        margin: auto;
+        @include flex;
+        width: 80%;
+        img {
+            width: 400px;
+            border-radius: 30px 0 30px 0;
+        }
+        p{
+            margin-left: 10%;
+            width: 80%;
+            font-size: 2rem;
+        }
+    }
+    .line{
+        margin-top: 80px;
+        @include line;
+    }
+}
