@@ -1,3 +1,27 @@
+This is a clone project on harvest website. 
+we are four member in this project: 
+1. Harishankar Patra
+2. Manish Kumar
+3. Anup Haldar
+4. Suraj Ku. Gupta
+
+This website is fully functional. we build this website using React,React-Redux,redux-thunk,chakra-ui,HTML,CSS,JavaScript,Json-server etc.
+Harishankar build the homepage of our website. Suraj build the SignUp,Login & Pricing page. Manish build the integration and Customer page and Anup build the Why Harvest and Feaures page of our website. In this website the functionality are working perfectly. If you want to checkout the link is in the below. Hope you liked our Website.
+
+Live Link: https://harvest-clone.netlify.app/
+
+Step to cloneing repo -->
+
+first clone this repo -->
+step 1. Open terminal
+step 2. git clone <paste the Link>
+step 3. cd rough-support-2269
+step 4. npm i
+step 5. npm run server
+setp 6. npm start
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
