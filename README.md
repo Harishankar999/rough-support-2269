@@ -1,12 +1,30 @@
-This is a clone project on harvest website. 
-we are four member in this project: 
-1. Harishankar Patra
-2. Manish Kumar
-3. Anup Haldar
-4. Suraj Ku. Gupta
+# Harvest Clone
 
+
+### About Our Website
+This is a clone project on harvest website. 
 This website is fully functional. we build this website using React,React-Redux,redux-thunk,chakra-ui,HTML,CSS,JavaScript,Json-server etc.
-Harishankar build the homepage of our website. Suraj build the SignUp,Login & Pricing page. Manish build the integration and Customer page and Anup build the Why Harvest and Feaures page of our website. In this website the functionality are working perfectly. If you want to checkout the link is in the below. Hope you liked our Website.
+Harishankar build the homepage of our website. Suraj build the SignUp,Login & Pricing page. Manish build the integration and Customer page and Anup build the Why Harvest and Feaures page of our website. In this website the functionality are working perfectly. we build this website in five days. due to time constraint we are unable make our website responsive. If you want to checkout the link is in the below. Hope you liked our Website.
+
+## we are four member in this project: 
+### 1. Harishankar Patra
+### 2. Manish Kumar
+### 3. Anup Haldar
+### 4. Suraj Ku. Gupta
+
+# Some Page Of our Website
+
+### This is Our Main landing page:
+![This is an image](https://github.com/Harishankar999/project-screentshot/blob/main/project%20screenshot/harvest%20home.png?raw=true)
+
+### This is Login page of our website:
+![This is an image](https://github.com/Harishankar999/project-screentshot/blob/main/project%20screenshot/harvest%20signup.png?raw=true)
+
+### This is Customer Story page of our website:
+![This is an image](https://github.com/Harishankar999/project-screentshot/blob/main/project%20screenshot/harvest%20storypage.png?raw=true)
+
+### This is Footer Part of our website:
+![This is an image](https://github.com/Harishankar999/project-screentshot/blob/main/project%20screenshot/harvest%20footer.png?raw=true)
 
 Live Link: https://harvest-clone.netlify.app/
 
